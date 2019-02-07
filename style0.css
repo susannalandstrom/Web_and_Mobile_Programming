@@ -1,0 +1,98 @@
+.page {
+    display: grid;
+    font-family: Papyrus, Serif;
+}
+
+.top_bar {
+    text-align: center;
+    font-size: xx-large;
+    color: tan;
+}
+
+#introduction_picture {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn {
+    /*height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;*/
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: black;
+    color: tan;
+    border: 1px solid black;
+    font-family: Papyrus, Serif;
+    cursor: pointer;
+}
+
+#btn:hover {
+    /*height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;*/
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    color: black;
+    border: 1px solid black;
+    font-family: Papyrus, Serif;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    float: left;
+}
+
+.list_grid {
+    width: 15%;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: auto;
+    border: 2px solid black;
+    background-color: tan;
+}
+
+#list {
+    padding-left: 20px;
+}
+
+.list_item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.post {
+    padding: 0 0 0 50px;
+    float: left;
+    width: 50%;
+    font-family: Palatino, serif;
+}
+
+.heading {
+    font-family: Papyrus, Serif;
+    font-size: larger;
+}
+
+.info {
+    font-family: Palatino, serif;
+    width: 20%;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: auto;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: tan;
+}
+
+
