@@ -18,13 +18,14 @@
                 <li class="list_item">Post 1</li>
                 <li class="list_item">Post 2</li>
                 <li class="list_item">Post 3</li>
+                <li id="measurement_post" class="list_item">Measurements</li>
             </ul>
-            <button id="btn">+ Add new post</button>
+            <button class="btn" id="post_btn">+ Add new post</button>
         </div>
         <div class="post">
             <p class="heading">Measurements</p>
             <p>My parents have been measuring my stats regularly, so here are my measurements.</p>
-            <table>
+            <table class="measurement_table">
                 <thead>
                 <tr>
                     <th>Age (weeks)</th>
@@ -53,8 +54,23 @@
         </div>
         <div class="info">
             <img id="introduction_picture" src="images/IMG_3850.JPG" />
-            <p>Hi! My name is Java and I'm a Shetland sheepdog. I was born 08/18 so I'm currently 6 months old.</p>
+            <p>Hi! My name is Java and I'm a <a href="https://en.wikipedia.org/wiki/Shetland_Sheepdog" target="_blank">Shetland sheepdog</a>. I was born 08/18 so I'm currently 6 months old.</p>
         </div>
+    </div>
+    <div class="comment_field">
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+                <label for="name">Username: </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-example">
+                <label for="comment" id="enter_comment_text">Comment: </label>
+                <textarea name="comment" id="comment" rows="10" cols="30"required></textarea>
+            </div>
+            <div class="form-example">
+                <button class="btn" id="comment_btn">+ Add comment</button>
+            </div>
+        </form>
     </div>
 </div>
 </body>

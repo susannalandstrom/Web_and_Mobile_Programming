@@ -17,15 +17,7 @@
     margin-right: auto;
 }
 
-#btn {
-    /*height: 30px;
-    width: 30px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;*/
-    margin-left: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
+.btn {
     background-color: black;
     color: tan;
     border: 1px solid black;
@@ -33,15 +25,50 @@
     cursor: pointer;
 }
 
-#btn:hover {
-    /*height: 30px;
-    width: 30px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;*/
+#post_btn {
     margin-left: 20px;
     margin-bottom: 10px;
     padding: 10px;
+}
+
+#comment_btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 75px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: sienna;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: tan;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+tr:hover {
+    background-color: burlywood;
+}
+
+.measurement_table {
+    border-collapse: collapse;
+}
+
+.btn:hover {
     background-color: antiquewhite;
     color: black;
     border: 1px solid black;
@@ -72,6 +99,11 @@
     cursor: pointer;
 }
 
+#measurement_post {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
 .post {
     padding: 0 0 0 50px;
     float: left;
@@ -95,4 +127,11 @@
     background-color: tan;
 }
 
+.comment_field {
+    margin-left: 100px;
+    margin-top: 20px;
+}
 
+#enter_comment_text {
+    vertical-align: top;
+}
