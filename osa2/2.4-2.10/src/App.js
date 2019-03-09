@@ -11,20 +11,37 @@ class App extends React.Component {
         }
     }
 
+    addNewName = (event) => {
+        event.preventDefault()
+        var persons = this.state.persons
+        persons = persons.concat({ name: this.state.newName})
+        console.log(persons)
+        this.setState({
+            persons: persons,
+            newName: ''})
+    }
+
+    handleNewName = (event) => {
+        this.setState({ newName: event.target.value })
+    }
+
     render() {
         return (
             <div>
                 <h2>Puhelinluettelo</h2>
-                <form>
+                <form onSubmit={this.addNewName}>
                     <div>
-                        nimi: <input />
+                        nimi: <input
+                        value={this.state.newName}
+                        onChange={this.handleNewName}
+                    />
                     </div>
                     <div>
                         <button type="submit">lisää</button>
                     </div>
                 </form>
                 <h2>Numerot</h2>
-                ...
+                {this.state.persons.map(person => <p key={person.name}> {person.name}</p>)}
             </div>
         )
     }
