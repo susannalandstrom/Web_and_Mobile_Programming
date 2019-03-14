@@ -7,14 +7,19 @@ class ContactList extends Component {
             <div>
                 <h2>Numerot</h2>
                 <table>
-                {this.props.persons.map(person =>
-                    <tr key={person.id}>
-                        <td>{person.name}</td><td>{person.number}</td>
-                        <button onClick={ (event) => this.props.deleteContact(event, person.id)}>
-                            Poista
-                        </button>
-                    </tr>)}
-                    </table>
+                    <tbody>
+                    {this.props.persons.map(person =>
+                        <tr key={person.id}>
+                            <td>{person.name}</td>
+                            <td>{person.number}</td>
+                            <td>
+                                <button onClick={(event) => this.props.deleteContact(event, person.id)}>
+                                    Poista
+                                </button>
+                            </td>
+                        </tr>)}
+                    </tbody>
+                </table>
             </div>
         );
     }
