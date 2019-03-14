@@ -6,7 +6,15 @@ class ContactList extends Component {
         return (
             <div>
                 <h2>Numerot</h2>
-                {this.props.persons.map(person => <p key={person.name}> {person.name} {person.number}</p>)}
+                <table>
+                {this.props.persons.map(person =>
+                    <tr key={person.id}>
+                        <td>{person.name}</td><td>{person.number}</td>
+                        <button onClick={ (event) => this.props.deleteContact(event, person.id)}>
+                            Poista
+                        </button>
+                    </tr>)}
+                    </table>
             </div>
         );
     }
